@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ENTITY % blockText "(#PCDATA | p | a | table | ul )*">
+
+<!ENTITY % fontstyle "i | b | a">
+
+
+<!ELEMENT li %blockText;>
+<!ELEMENT ul (li)*>
+
+
+<!ELEMENT table (tr)*>
+<!ELEMENT tr (td)*>
+<!ELEMENT td %blockText;>
+
+<!ELEMENT p (#PCDATA | %fontstyle;)* >
+
+<!ELEMENT b (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+
+
+<!ELEMENT a ( #PCDATA | %fontstyle;)*>
+<!ATTLIST a href CDATA #IMPLIED>
+
+
+<!ELEMENT  master	(declaration-intervenants, declaration-unite, declaration-parcours, declaration-metier)>
+
+<!ELEMENT  intervenants (ref-intervenant+)>
+<!ELEMENT  ref-intervenant	(#PCDATA)>
+<!ATTLIST  ref-intervenant ref IDREF  #REQUIRED>
+
+<!ELEMENT  declaration-intervenants (intervenant)+>
+<!ELEMENT  intervenant  (nom, mail, site-web)>
+
+<!ATTLIST  intervenant id ID #REQUIRED>
+
+<!ELEMENT  nom		(#PCDATA)>
+<!ELEMENT  prenom   (#PCDATA)>
+<!ELEMENT  mail		(#PCDATA)>
+<!ELEMENT  site-web	(#PCDATA)>
+
+<!ELEMENT  declaration-unite (unite)*>
+<!ELEMENT  unite  (nom, credit, resume, lieu-enseignement, intervenants)>
+<!ATTLIST  unite id  ID  #REQUIRED>
+
+<!ELEMENT  credit	(#PCDATA)>
+<!ELEMENT  resume	%blockText;>
+<!ELEMENT  plan	%blockText;>
+<!ELEMENT  lieu-enseignement %blockText;>
+
+<!ELEMENT  declaration-parcours (parcours)*>
+<!ELEMENT  parcours  (nom, description, responsables, semestre+, debouches)>
+<!ELEMENT  responsables (ref-intervenant+)>
+
+<!ELEMENT  declaration-metier (metier)*>
+<!ELEMENT  metier  (nom, description)>
+<!ATTLIST  metier id ID #REQUIRED>
+
+<!ELEMENT  debouches  (ref-metier)*>
+<!ELEMENT  ref-metier (#PCDATA)>
+<!ATTLIST  ref-metier ref IDREF  #REQUIRED>
+
+
+<!ELEMENT  description  %blockText;>
+
+<!ELEMENT  semestre  (ens-UE+)>
+<!ELEMENT  ens-UE  (role, ref-unite+)>
+<!ELEMENT  role		%blockText;>
+<!ELEMENT  ref-unite  (#PCDATA)>
+<!ATTLIST  ref-unite ref IDREF  #REQUIRED>
+
+
+
