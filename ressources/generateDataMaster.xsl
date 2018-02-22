@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output encoding="ISO-8859-15" method="xml" indent="yes" />
-	<xsl:template match="objets">
+<xsl:stylesheet version="2.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:output omit-xml-declaration="yes" indent="yes"/>
+    <xsl:strip-space elements="*"/>
+
+    <xsl:template match="objets">
 		<master>
 			<declaration-intervenants>
 				<xsl:for-each select="objet[@type = 'personne']">
@@ -16,11 +19,12 @@
 						<mail>
 							<xsl:value-of select="info[@nom = 'mail']/@value" />
 						</mail>
+
 						<site-web>
-							<xsl:value-of select="info[@nom ='prenom']/@value" />
-							.
-							<xsl:value-of select="info[@nom = 'nom']/@value" />
-							.perso.luminy.univ-amu.fr
+                            <xsl:value-of select="translate(lower-case(info[@nom ='prenom']/@value), ' ', '-')"/>
+                            <xsl:text>.</xsl:text>
+                            <xsl:value-of select="translate(lower-case(info[@nom = 'nom']/@value), ' ', '-')"/>
+                            <xsl:text>.perso.luminy.univ-amu.fr</xsl:text>
 						</site-web>
 					</intervenant>
 				</xsl:for-each>
