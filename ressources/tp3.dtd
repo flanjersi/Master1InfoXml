@@ -30,7 +30,7 @@
 <!ATTLIST  ref-intervenant ref IDREF  #REQUIRED>
 
 <!ELEMENT  declaration-intervenants (intervenant)+>
-<!ELEMENT  intervenant  (nom, mail, site-web)>
+<!ELEMENT  intervenant  (prenom, nom, mail, site-web)>
 
 <!ATTLIST  intervenant id ID #REQUIRED>
 
