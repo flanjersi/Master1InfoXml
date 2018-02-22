@@ -3,7 +3,7 @@
 
     <xsl:template match="declaration-parcours">
         <xsl:for-each select="parcours">
-            <xsl:result-document href="{nom}.html">
+            <xsl:result-document href="www/parcours/{nom}.html">
                 <html>
                     <head>
                         <title>Détail d'un intervenant</title>

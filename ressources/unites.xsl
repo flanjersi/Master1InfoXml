@@ -5,7 +5,7 @@
 
     <xsl:template match="declaration-unite">
         <xsl:for-each select="unite">
-            <xsl:result-document href="{@id}.html">
+            <xsl:result-document href="www/unites/{@id}.html">
                 <html>
                     <head>
                         <link rel="stylesheet" href="master.css" type="text/css"/>

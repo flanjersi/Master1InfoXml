@@ -53,7 +53,7 @@
     <!-- CREATION DES PAGES INTERVENANTS -->
     <xsl:template match="declaration-intervenants">
         <xsl:for-each select="intervenant">
-            <xsl:result-document href="{@id}.html">
+            <xsl:result-document href="www/intervenants/{@id}.html">
                 <html>
                     <head>
                         <link rel="stylesheet" href="master.css" type="text/css"/>

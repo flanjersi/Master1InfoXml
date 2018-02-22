@@ -13,7 +13,7 @@
         <xsl:apply-templates select="declaration-parcours"/>
 
         <!-- CREATION PAGE ACCEUIL -->
-        <xsl:result-document href="index.html" method="html">
+        <xsl:result-document href="www/index.html" method="html">
             <html>
                 <head>
                     <title>Table of Contents</title>
@@ -25,7 +25,7 @@
         </xsl:result-document>
 
         <!-- CREATION PAGE LISTE DES UNITES -->
-        <xsl:result-document href="unites.html" method="html">
+        <xsl:result-document href="www/unites.html" method="html">
             <html>
                 <head>
                     <title>Liste des unites</title>
@@ -42,7 +42,7 @@
         </xsl:result-document>
 
         <!-- CREATION PAGE LISTE DES INTERVENANTS -->
-        <xsl:result-document href="intervenants.html" method="html">
+        <xsl:result-document href="www/intervenants.html" method="html">
             <html>
                 <head>
                     <title>Listes des intervenants</title>

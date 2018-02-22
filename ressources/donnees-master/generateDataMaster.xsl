@@ -2,10 +2,13 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output omit-xml-declaration="yes" indent="yes"/>
+	<xsl:output omit-xml-declaration="no"
+				indent="yes"
+				doctype-system="data.dtd"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:template match="objets">
+
+	<xsl:template match="objets">
 		<master>
 			<declaration-intervenants>
 				<xsl:for-each select="objet[@type = 'personne']">

@@ -14,3 +14,17 @@
 # Maven
 log/
 target/
+
+ressources/output/
+ressources/www/intervenants/
+ressources/www/unites/
+ressources/www/parcours/
+
+ressources/www/index.html
+ressources/www/intervenants.html
+ressources/www/unites.html
+
+
+
+
+
