@@ -33,7 +33,9 @@
                 <body>
                     <h1>Liste des unités</h1>
                     <ul>
-                        <xsl:apply-templates select="//unite" mode="ref"/>
+                        <xsl:apply-templates select="//unite" mode="ref">
+                        	<xsl:sort select="nom" order="ascending"/>
+                        </xsl:apply-templates>
                     </ul>
                 </body>
             </html>
