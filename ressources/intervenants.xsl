@@ -62,7 +62,6 @@
                     </head>
                     <body>
                         <div class="article">
-                            <img src="random.jpg" width="512" height="512"/>
                             <h1>
                                 <xsl:value-of select="prenom"/>
                                 <xsl:text> </xsl:text>
@@ -108,7 +107,10 @@
                                 </xsl:call-template>
                             </div>
                         </div>
-                        <xsl:apply-templates select="//declaration-intervenants" mode="menu"/>
+                        <div w3-include-html="intervenants.html"></div> 
+						<script>
+						includeHTML();
+						</script>
                     </body>
                 </html>
             </xsl:result-document>
@@ -122,7 +124,6 @@
                 <xsl:for-each select="intervenant">
                     <li>
                         <a href="{@id}.html">
-                            <img class="head" src="random.jpg"/>
                             <xsl:value-of select="prenom"/>
                             <xsl:text> </xsl:text>
                             <xsl:value-of select="nom"/>

@@ -37,7 +37,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <xsl:apply-templates select="//declaration-unite" mode="menu"/>
+                        <div w3-include-html="unites.html"></div> 
+						<script>
+						includeHTML();
+						</script>
                     </body>
                 </html>
             </xsl:result-document>
@@ -49,13 +52,9 @@
         <div id="menu-list">
             <div id="title">UNITES</div>
             <ul id="list-ul">
-                <xsl:for-each select="unite">
-                    <li>
-                        <a href="{@id}.html">
-                            <xsl:value-of select="nom"/>
-                        </a>
-                    </li>
-                </xsl:for-each>
+                <xsl:apply-templates select="unite" mode="ref">
+                	<xsl:sort select="nom" order="ascending"/>
+                </xsl:apply-templates>
             </ul>
             <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
         </div>
