@@ -3,7 +3,7 @@
 
     <xsl:template match="declaration-parcours">
         <xsl:for-each select="parcours">
-            <xsl:result-document href="www/parcours/{nom}.html">
+            <xsl:result-document href="www/{nom}.html">
                 <html>
                     <head>
                     	<link rel="stylesheet" href="master.css" type="text/css"/>
@@ -31,7 +31,7 @@
 	                        <xsl:apply-templates select="semestre[2]"/>
 	                        </div>
 	                    </div>
-                        <div w3-include-html="parcours.html"></div> 
+                        <div id="menu-list" w3-include-html="parcoursMenu.html"></div> 
 						<script>
 						includeHTML();
 						</script>

@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   
+   
+      
+         Génie Logiciel
+         6
+         
+            
+               - Processus logiciel
+               
+               - Gestion de projet
+               
+               - Spécification et conception (artefact : notation UML)
+               
+               - Design patterns
+            
+         
+      
+      
+         Modèles à évènements discrets
+         3
+         
+            
+               Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
+               
+               Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).
+            
+         
+      
+      
+         Introduction à l'apprentissage automatique
+         3
+         
+            
+               - Introduction aux concepts de bases : formalisme statistique, erreur de généralisation
+               
+               - Arbres de décision : algorithme ID3, élagage, programmation
+               
+               - Algorithme du perceptron : algorithme, temps de convergence, propriétés de généralisation, application à la classification de textes
+               
+               - Régression logistique : cadre probabiliste, maximisation de la vraisemblance, optimisation par gradient conjugué et méthode de Newton, application à la classification de textes
+               
+               - Quelques éléments théoriques : notion de capacité de classes de fonctions, complexité de Rademacher, borne dépendante des données.
+            
+         
+      
+      
+         Complexité
+         6
+         
+            
+               - Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.
+               
+               - Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.
+               
+               - Classes P et NP. Problèmes NP-complets.
+               
+               - Méthodes de résolution des problèmes NP-Complets.
+            
+         
+      
+      
+         Réseaux
+         6
+         
+            
+               - Architecture en couches, standard OSI
+               
+               - Couche physique
+               
+               - Couche liaison de Données
+               
+               - Réseau IP
+               
+               - Algorithmes de routage, routage IP
+               
+               - Protocole TCP/IP
+               
+               - Couche Application : HTTP, SMTP, FTP, ...
+               
+               - Bases des protocoles cryptographiques (terminologie, architecture à clef publique).
+               
+               - Introduction à la Sécurité des réseaux.
+            
+         
+      
+      
+         Programmation fonctionnelle
+         3
+         
+            
+               1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+               
+               OCaml
+               
+               Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
+               
+               Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
+               
+               2- Les types
+               
+               Sommes, types récursifs, polymorphes. Arbres. Filtrage.
+               
+               3- Sémantique opérationnelle
+               
+               Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
+               
+               4- Aspects impératifs
+               
+               Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
+               
+               5- Implantation du filtrage en OCaml
+               
+               Termes formels, substitutions, filtrage.
+            
+         
+      
+      
+         Programmation parallèle
+         3
+         
+            
+               Ma position est que dans programmation parallèle, on fait de la programmation multithread en JAVA, en tâchant d'être rigoureux : présentation des problèmes et des solutions algorithmiques ; classes utiles ; construction de classe threadsafe ; détail de modèle mémoire
+               
+               Java et garantie DRF.
+               
+               Cette année j'ai ajouté vérification formelle d'algorithmes parallèles (ou distribués).
+            
+         
+      
+      
+         Programmation logique
+         3
+         
+            
+               - Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.
+               
+               - Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.
+               
+               - Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.
+               
+               - Règles prédéfinies.
+            
+         
+      
+      
+         Outils de l'internet
+         3
+         
+            
+               - Présentation d'Internet.
+               
+               - Les langages et les normes sur Internet.
+               
+               - Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3
+               
+               - Les applications web.
+               
+               - Sécurité.
+               
+               - Les nouvelles et futures technologies.
+            
+         
+      
+      
+         Système embarqué
+         3
+         
+      
+      
+         Fondamentaux pour l'ingénierie des langues
+         3
+         
+            
+               - Rappel de théorie des langages
+               
+               - Algorithmes d'analyse syntaxique pour grammaires ambiguës
+               
+               - Transducteurs finis et leur application en TAL
+            
+         
+      
+      
+         Anglais
+         3
+         
+            
+               Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.
+            
+         
+      
+      
+         Intégration des systèmes d'information
+         3
+         
+            
+               - Problématique d'intégration des SI
+               
+               - Architectures et patrons d'intégration
+               
+               - Systèmes d'Information d'entreprises
+               
+               - Systèmes d'Information sur Internet
+            
+         
+      
+      
+         Initiation à la fouille de données et à l’optimisation des SGBD
+         3
+         
+            
+               Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).
+               
+               Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.
+            
+         
+      
+      
+         Intelligence artificielle
+         3
+         
+            
+               - Introduction à l'IA
+               
+               - Problèmes d'espace d'états et d'exploration
+               
+               - Logiques pour l'IA et démonstration automatique
+               
+               - Représentation de connaissances
+               
+               - Actions, temps et planification
+               
+               - Programmation par contraintes et réseaux de contraintes
+            
+         
+      
+      
+         Algorithme à performance garantie
+         3
+         
+            
+               - Algorithmes d'approximation de nature combinatoire pour les problèmes
+               
+               NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;
+               
+               - FPTAS et PTAS (ordonnancement de taches et sac à dos) ;
+               
+               - Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;
+               
+               - Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.
+            
+         
+      
+      
+         Pratique de la cryptographie
+         3
+         
+            
+               Cette UE propose un tour d'horizon de la cryptographie moderne avec une attention particulière pour le codage de primitives cryptographiques. Il s'agit tout d'abord de comprendre les problèmes centraux de confidentialité, d’authentification et d’intégrité. Les notions de signature et de certificats électroniques seront aussi étudiées. Les différents types de solutions seront présentées : cryptographie symétrique, asymétrique, par flot, par blocs, les fonctions de hâchage, les architectures PKI, etc.
+               
+               Le détail des techniques éprouvées telles que RC4, AES, RSA, DSA feront l'objet d'un codage en C ou en Java. Enfin les Travaux Pratiques permettront de s'initier à des librairies standards pour le calcul sur de grands entiers, à savoir GMP en C ou BigInteger en Java, ainsi qu'au fonctionnement de l’extension JCE (Java Cryptography Extension).
+            
+         
+      
+      
+         Communication
+         3
+         
+            
+               chapitre 1
+                : 
+               Théories de la communication :
+            
+            
+               
+                  1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)
+               
+               
+                  1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)
+               
+            
+            
+               chapitre 2 : Rôle de l’interculturalité dans le travail en équipe :
+            
+            
+               
+                  2.1 L’enquête interculturelle de Hofstede pour IBM
+               
+               
+                  2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)
+               
+            
+            
+               chapitre 3 : Notions de management et de travail collaboratif
+            
+            
+               
+                  3.1 Le travail collaboratif vs le travail coopératif
+               
+               
+                  3.2 La notion de groupes
+               
+               
+                  3.3 Les compétences managériales
+               
+            
+         
+      
+      
+         Bases de données avancées
+         3
+         
+            
+               - Transactions, concurrence
+               
+               - Déclencheurs et exceptions
+               
+               - Conception, Entités/Associations
+            
+         
+      
+      
+         XML
+         3
+         
+            
+               - XML, DTD, XSD
+               
+               - XPath, XSLT, XQuery
+            
+         
+      
+      
+         Algorithmique et recherche opérationnelle
+         3
+         
+            
+               - Programmation linéaire.
+               
+               - Notions et algorithmes de flots.
+               
+               - Applications (couplage, affectation, transport, ...)
+               
+               - Programmation dynamique (sac à dos, ordonnancement, ...)
+               
+               - Algorithmes à performance garantie
+            
+         
+      
+      
+         Projet
+         6
+         
+            
+               Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+            
+         
+      
+      
+         Stage de deux mois
+         6
+         
+            
+               Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale.
+            
+         
+      
+      
+         Sémantique
+         3
+         
+            
+               1-Le lambda-calcul simplement typé
+               
+               Syntaxe, typage, beta et eta-conversions, équations. Modèles : interprétation des jugements de typage.
+               
+               2-Extension à PCF. La règle \mu.
+               
+               3-Points fixes dans les ordres partiels complets.
+               
+               Le théorème de Tarski.
+               
+               4-Sémantique par point fixe de PCF.
+               
+               5-Cours de clôture : survol des différentes approches sémantiques.
+               
+               Sémantiques opérationnelles : par transitions, naturelles, machine abstraite de
+               
+               Landin.
+               
+               Sémantique dénotationnelles : cas fonctionnel(cf.chapitre 4) et cas d'un petit langage impératif.
+            
+         
+      
+      
+         Algorithmique distribuée
+         3
+         
+            
+               Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.
+            
+         
+      
+      
+         Algorithmique et complexité
+         6
+         
+            
+               Principales techniques de conception et analyse d'algorithmes (efficaces) pour les problèmes polynomiaux et les problèmes NP-complets. Complexité de l'approximation, du comptage. Complexité paramétrée. Classes probabilistes.
+            
+         
+      
+      
+         Fouille de données avancée
+         3
+         
+            
+               Approfondissement des techniques de fouille de données en étudiant les méthodes de réduction des règles d'association ainsi que leur application à la classification supervisée et en mettant en œuvre des algorithmes par niveaux.
+            
+         
+      
+      
+         Géométrie discrète
+         3
+         
+            
+               Introduction à la géométrie discrète dans $Z^n$, en trois volets : des rappels sur la géométrie des nombres, un état de l'art en géométrie discrète, enfin une étude des transformations de distances et leurs applications.
+            
+         
+      
+      
+         Algorithmique des graphes et réseaux
+         3
+         
+            
+               Algorithmes exacts. Algorithmes d'approximation. Structures de données distribuées.
+            
+         
+      
+      
+         Espaces métriques : structure et algorithmiques
+         3
+         
+            
+               Introduction aux principales classes et constructions des espaces métriques et des graphes métriques,. Plongements isométriques ou à faible distorsion des espaces métriques dans des espaces géométriques, leur applications en informatique et mathématiques.
+            
+         
+      
+      
+         Optimisation combinatoire et programmation en nombres entiers
+         3
+         
+            
+               Principaux concepts, algorithmes, méthodes et outils qui permettent de résoudre les problèmes d'optimisation combinatoire, en particulier ceux qui se formulent comme des programmes linéaires en nombres entiers.
+            
+         
+      
+      
+         Logiques et jeux
+         3
+         
+            
+               Mu-calcul , syntaxe-sémantique. Model-checking par jeux de parité, tableaux-decidabilité. Puissance expressive
+            
+         
+      
+      
+         Algorithmique distribuée 2
+         3
+         
+            
+               Algorithmes de diffusion, diffusion avec retour. Algorithmes d'élection, détection de la terminaison. Tolérance aux pannes
+            
+         
+      
+      
+         Vérification et sécurité
+         3
+         
+            
+               Model Checking. Algorithmes de vérification. Modèles de sécurité. Vérification de programmes par analyse statique.
+            
+         
+      
+      
+         Modèles du parallélisme
+         3
+         
+            
+               Modèles classiques de systèmes. Résultats principaux du domaine concernant les problèmes d'accessibilité, de model-checking, de contrôle ou de synthèse associés.
+            
+         
+      
+      
+         Modèles et connaissances linguistiques pour le TAL
+         3
+         
+            
+               Traitement automatique des langues dans ses aspects applications. Différentes types de connaissances et modèles symboliques sur la langue. Plusieurs ressources linguistiques pour le français sont examinées.
+            
+         
+      
+      
+         Logique, automates et aspects formels de la théorie des langages
+         6
+         
+            
+               Logique du premier ordre. Logiques modales et temporelles. Logiques monadiques. Décidabilité de logiques .
+            
+            
+               Automates de mots finis et infinis. Automates d'arbres et langages réguliers d'arbres. Liens avec la logique
+            
+         
+      
+      
+         Syntaxe et sémantique : modèles et outils
+         3
+         
+            
+               Principes et nature des représentations syntaxiques et sémantiques associables à une phrase. Différents formalismes seront étudiés pour exprimer ces représentations.
+            
+         
+      
+      
+         Modèles numériques pour le TAL
+         3
+         
+            
+               Présentation des modèles numériques utilisés pour différentes tâches du Traitement Automatique des Langue. Algorithmes qui permettent d'en estimer les paramètres à partir de données et les algorithmes de décodage.
+            
+         
+      
+      
+         Applications du Traitement Automatique de la Langue (TAL)
+         3
+         
+            
+               État de l'art dans différentes applications du Traitement Automatique des Langues, tel que la traduction automatique, le résumé automatique ainsi que sur les traitements de « bas niveau » nécessaires dans la majorité des applications.
+            
+         
+      
+      
+         Algorithmique des chaînes de caractères
+         3
+         
+            
+               Différentes structures et algorithmes relatifs aux traitements des chaînes de caractères.
+            
+         
+      
+      
+         Classification et phylogénie
+         3
+         
+            
+               Méthodes de classification et de construction d'arbres à partir de distances.
+            
+         
+      
+      
+         Modèles markoviens
+         3
+         
+            
+               Présentation des chaînes de Markov, leurs algorithmes et applications.
+            
+         
+      
+      
+         Logiques non-standards
+         3
+         
+            
+               Logiques multi-modales des connaissances et de l'interaction. Logiques non-monotones. Logiques de description. Tableaux sémantiques pour logiques de mondes possibles. Bases de connaissances dynamiques.
+            
+         
+      
+      
+         Anglais 2
+         3
+         
+            
+               Expression orale et écrite : exposés sur des sujets scientifiques et / ou professionnels, travaux écrits. Préparation et passage du TOEIC.
+            
+         
+      
+      
+         Communication 2
+         3
+         
+            
+               L’étudiant apprend à effectuer un bilan de son parcours de formation, à élaborer un projet professionnel personnel, à cerner ses motivations et à enrichir ses connaissances des métiers et du marché de l’informatique pour se constituer un portefeuille de compétences.
+            
+            
+               
+                  Valorisation du parcours de formation
+               
+               
+                  Clarification des motivations et de leurs incidences sur des choix professionnels
+               
+               
+                  Identification des aptitudes et des compétences,
+               
+               
+                  Positionnement du projet personnel et professionnel
+               
+               
+                  Ajustement des profils annonce / candidature
+               
+               
+                  Préparation aux entretiens de recrutement
+               
+               
+                  Rédaction de curriculum vitae et de lettres de motivation
+               
+            
+         
+      
+      
+         Fiabilité logicielle 1
+         3
+         
+            
+               Les bases du Test. Test d'intégration. Preuve de programme et Design by Contract. Test d'applications distribuées.
+            
+         
+      
+      
+         Statistique inférentielle
+         3
+         
+            
+               Théorie des probabilités et statistique inférentielle. Ce cours permet d'acquérir des bases solides pour l'apprentissage automatique ou le traitement automatique de la langue naturelle
+            
+         
+      
+      
+         Plateforme JEE
+         3
+         
+            
+               Interface d'accès aux données (JDBC). Technologies pour la réalisation d'applications Client/Serveur sur le WEB (JSP/Servlet). Technologies pour la mise en œuvre de middleware (RMI/EJB).
+            
+         
+      
+      
+         Systèmes hétérogènes
+         3
+         
+            
+               Les parties magistrales de l'enseignement seront l'occasion d'aborder notamment les aspects suivants :
+            
+            
+               
+                  Introduction aux métiers et organisation des Systèmes d'Information (DSI, AMO, MOE, architectes, exploitants...)
+               
+               
+                  Introduction aux stratégies d'entreprises autour de leurs systèmes d'information (plan de continuité d'activité, plan de reprise d'activité, plan de continuité informatique...)
+               
+               
+                  Introduction à la conception et à l'évolution de systèmes d'information (recueil et analyse de l'existant, des besoins et contraintes, scénarii, rédaction de cahier des charges...)
+               
+               
+                  Découvertes des technologies liées à la disponibilité et haute disponibilité des données informatiques (réseaux de stockage - SAN, NAS -, virtualisation...)
+               
+               
+                  Découverte des architectures de disponibilité et haute disponibilité des SI (analyse des besoins, conception, cloud computing...)
+               
+               
+                  Approfondissement des savoirs autour des réseaux de transferts de données d'entreprises (routage, réseaux privés virtuels...)
+               
+               
+                  Découverte des infrastructures de services des réseaux de données
+               
+            
+         
+      
+      
+         Sécurité internet et réseau
+         6
+         
+            
+               Le cours aborde la sécurité de l'information sous deux aspects :
+            
+            
+               
+                  Un volet organisationnel qui aborde la mise en place d'un système de management de la sécurité informatique à travers notamment l'étude des normes (ISO 27001, ISO 27002 ...) ou l'utilisation pratique de méthodes d'évaluation des besoins et des objectifs de sécurité
+               
+               
+                  Un volet technique orienté sur l'acquisition des mécanismes cryptographiques actuels (algorithmes, protocoles ...) avec une mise en œuvre pratique (tunnels sécurisés, infrastructure de distribution de certificats...) ainsi que l'utilisation des outils de sécurité réseaux (journalisation, conformité …) en complément d'une sensibilisation pratique aux types d'attaque réellement existantes.
+               
+            
+         
+      
+      
+         Fiabilité logicielle 2
+         3
+         
+            
+               Politique de Sécurité, Contrôle d'accès, Modèles de sécurité. Typage et Sécurité en Java. Analyse de programme.
+            
+         
+      
+      
+         Qualité
+         3
+         
+            
+               Chapitre 1 : Introduction : Référentiels et Gestion de Service IT
+            
+            
+               
+                  Concept de Service, La Gestion de Service et ITILv3, Processus, Rôles et Fonctions, Deming, Cycle de vie des Services
+               
+            
+            
+               Chapitre 2 : Stratégie des Services
+            
+            
+               
+                  Définition de la Stratégie, Gestion du Portefeuille, Gestion de la Demande, Gestion Financière
+               
+            
+            
+               Chapitre 3 : Conception des Services
+            
+            
+               
+                  Concepts, Gestion du Catalogue, Gestion des Niveaux de Service, Gestion de la Capacité, Gestion de la Disponibilité, Gestion de la Continuité, Gestion de la Sécurité, Gestion des Fournisseurs
+               
+            
+            
+               Chapitre 4 : Transition des Services
+            
+            
+               
+                  Gestion des Actifs et des Configurations, Gestion des Changements, Gestion des Déploiements et des Mises en Production, Gestion de la Connaissance
+               
+            
+            
+               Chapitre 5 : Exploitation des Services
+            
+            
+               
+                  Les Fonctions, Gestion des Evènements, Gestion des Incidents, Gestion des Requêtes, gestion des Problèmes, Gestion des Accès
+               
+            
+            
+               Chapitre 6 : Amélioration Continue des Services
+            
+            
+               
+                  Processus d’amélioration en 7 étapes
+               
+            
+         
+      
+      
+         Sécurité des systèmes embarqués
+         3
+         
+            
+               Contenu en cours d'élaboration.
+            
+         
+      
+      
+         Administration système et réseau
+         3
+         
+            
+               L'objectif est de préparer les étudiants à l'administration d'un réseau d'ordinateurs. L'accent sera mis sur les aspects pratiques et concrets de l'administration d'un réseau d'entreprise pour les systèmes UNIX et Windows. A ce titre, une maquette constituée de plusieurs serveurs et stations sous Windows 2000/XP/Linux sera montée par les étudiants.
+            
+         
+      
+      
+         Méthodes de développement
+         3
+         
+            
+               En cours, sont vus les éléments suivants :
+            
+            
+               
+                  Les problématiques d'un développement pérenne (principes, cycle de développement, méthodologies)
+               
+               
+                  Rappels d'UML : principaux diagrammes (classes, activités, cas, séquences), représentation, études de cas
+               
+               
+                  Les design patterns en profondeur (description détaillée des 26 patterns, étude de cas)
+               
+            
+         
+      
+      
+         Architecture logicielle
+         3
+         
+            
+               Architecture n-tiers. Architecture des applications WEB (MVC, Spring, Struts, JSF). Sécurité des applications WEB. Architecture par composants (EJB, IoC, Spring). Annuaire d'entreprise (JNDI).
+            
+         
+      
+      
+         Intégration des données
+         3
+         
+            
+               Modèle objet (standard de l'ODMG 1993-1997). Modèle relationnel-objet (norme SQL3 de 1999-2000). Principe des plateforme de correspondance objet-relationnel (ORM, JPA)
+            
+         
+      
+      
+         Nouveaux défis en apprentissage
+         3
+         
+            
+               Étude des méthodes d'apprentissage qui traitent, de façon tant théorique qu'appliquée, séparément ou simultanément, un ou plusieurs problèmes classiques
+            
+         
+      
+      
+         Administration et alimentation de BD
+         3
+         
+            
+               Architecture d’un SGBD (Oracle). Création, confidentialité, optimisation et sécurité d’une base de données. Migration de bases de données : techniques usuelles, maintenance de l’inter-dépendance entre bases de données. Alimentation, nettoyage et sélection des données en vue d'analyses.
+            
+         
+      
+      
+         Qualité logicielle : outils et méthodes
+         6
+         
+            
+               Qualité logicielle, test et validation logiciel, ateliers de génie logiciel.
+            
+         
+      
+      
+         Spécification logicielle
+         3
+         
+            
+               Modèles formels, modèle SADT, logiciels temps réel, méthode SA-RT.
+            
+         
+      
+      
+         Conception logicielle et IHM
+         3
+         
+            
+               Conception objet, patrons de conception, conception IHM.
+            
+         
+      
+      
+         Architecture logicielle JEE
+         3
+         
+            
+               Composants logiciels , architectures N-tier, middleware, Entreprise Java Beans (EJB).
+            
+         
+      
+      
+         Technologies du Web et Web 2.0
+         3
+         
+            
+               Protocoles de communication, standards Web, Langages à balises, programmation Web, Ajax, XUL, standardisation et convergence d'interfaces.
+            
+         
+      
+      
+         XML avancé
+         3
+         
+            
+               Modélisation et navigation, XSchema et XPath avancés, Requêtage des bases documentaires, DOM et SAX avancés.
+            
+         
+      
+      
+         Gestion de projet
+         3
+         
+            
+               Définition et acteurs d'un projet, organisation d'un projet, techniques de planification, estimation prévisionnelle d'un projet, pilotage et contrôle d'un projet, recette finale.
+            
+         
+      
+      
+         Optimisation linéaire
+         3
+         
+            
+               – Rappels de programmation linéaire.
+            
+            
+               – Implantation efficace de la méthode simplex.
+            
+            
+               – Dualité et analyse de sensibilité.
+            
+            
+               – Notion et algorithmes de flots, applications.
+            
+         
+      
+      
+         Fouille de Bases de Données (FBD)
+         3
+         
+      
+      
+         Théorie de l'apprentissage
+         3
+         
+            
+               Avancées récentes en théorie de l'apprentissage statistique : complexité de Rademacher, bornes PAC-Bayes, stabilité algorithmique, schémas de compression.
+            
+         
+      
+      
+         Méthodologie de conception d'applications décisionnelles
+         3
+         
+            
+               – Technique de nettoyage et de vérification des données.
+            
+            
+               – Analyse et modélisation de problèmes décisionnels.
+            
+            
+               – Définition de l'objectif de l'analyse : indicateurs, mesures et reporting.
+            
+            
+               – Études de cas.
+            
+            
+               – Logiciels : Penthao Dashboard et Reporting.
+            
+         
+      
+      
+         Entrepôt de Données
+         6
+         
+            
+               – Définition, caractéristique, particularité, architecture.
+            
+            
+               – Intégration de données.
+            
+            
+               – Exploitation d'un entrepôt en vue d'analyses.
+            
+            
+               – Requêtes OLAP.
+            
+            
+               – Cubes de données, modèles conceptuels et logiques.
+            
+            
+               – Méthode algorithmique de type Rolap cubing.
+            
+            
+               – Fouille d'entrepôt de données.
+            
+            
+               – Logiciels : ORACLE OLAP, Pentaho Data Integration, Mondrian.
+            
+         
+      
+      
+         Fouille de Données Avancée
+         3
+         
+            
+               – Extraction des règles de corrélation.
+            
+            
+               – Méthodes de classification.
+            
+            
+               – Méthodes de clustering.
+            
+            
+               – Logiciels : SAS Enterprise.
+            
+         
+      
+      
+         Modélisation en RO
+         3
+         
+            
+               – Modélisation mathématique d'un problème d'optimisation.
+            
+            
+               – Utilisation de langage de modélisation et de solveurs.
+            
+            
+               – Modélisation en variables binaires.
+            
+            
+               – Etudes de cas par secteurs d'activités.
+            
+            
+               – Logiciels : Xpress, Mosel, OPL.
+            
+         
+      
+      
+         Recherche locale
+         3
+         
+            
+               – Introduction et méthodologie.
+            
+            
+               – Stratégie de recherche et mouvements.
+            
+            
+               – Algorithmique incrémentale.
+            
+            
+               – Modélisation orientée recherche locale.
+            
+            
+               – Un solveur par recherche locale : LocalSolver.
+            
+            
+               – Etude de cas.
+            
+         
+      
+      
+         Programmation en Nombres Entiers
+         3
+         
+            
+               – Formulations de programmes en nombres entiers.
+            
+            
+               – Reformulations, formulations étendues et formulations parfaites.
+            
+            
+               – Méthodes par séparation et évaluation progressive (branch-and-bound).
+            
+            
+               – Aspects polyédraux, méthodes de plan coupant, méthodes de coupes.
+            
+            
+               – Dualité, décomposition, relaxations lagrangiennes, relaxations semi-définies positives.
+            
+            
+               – Logiciels : CPLEX, GLPK, GnuMathProg, COIN-OR.
+            
+         
+      
+      
+         Traitement automatique de la parole
+         3
+         
+            
+               L'objectif de ce cours est de présenter d'une part les principaux formalismes, modèles et algorithmes pour le traitement automatique de l'oral et d'autre part les outils logiciels permettant de construire une application incluant de la reconnaissance et/ou de la synthèse vocale. Le but de ce cours est de donner aux étudiants une connaissance du potentiel et des limites de la technologie actuelle dans ce domaine.
+            
+         
+      
+      
+         Indexation et recherche d'images et vidéos
+         3
+         
+            
+               Ce cours présente les techniques d’analyse pour l’indexation et la recherche dans des corpus d'images et de vidéos : calcul de caractéristiques, segmentation en plans et fusion d’indexes.
+            
+         
+      
+      
+         Apprentissage automatique et classification
+         6
+         
+            
+               La classification par apprentissage automatique (supervisé et non supervisé) est introduite dans ses objectifs et ses principes. En s'appuyant sur des méthodes éprouvées (arbres de décision, classifieur naïf de Bayes, SVM, k-means, etc.), les grands principes de l'apprentissage automatique pour la classification sont présentés, et illustrés dans le cas de données multimedia (texte et image). Un accent tout particulier est porté sur l'environnement méthodologique de l'apprentissage automatique (estimation de paramètres, évaluation des classifieurs, données manquantes ou bruitées, etc.)
+            
+         
+      
+      
+         Traitement et indexation des données multimédia
+         6
+         
+            
+               Ce cours présente une introduction au domaine de la Recherche d’Information Multimédia. La première partie du cours introduit les principes généraux de la RI, appliqués aux documents textuels : indexation ; interrogation ; évaluation. Les modèles classiques : booléen, vectoriel et probabiliste sont présentés, ainsi que les notions d’extension de requête et de bouclage de pertinence. Ce cours s'intéresse aussi aux spécificités des différents formats image et vidéo et présente des solutions pratique pour la mise en oeuvre de serveurs de streaming vidéo.
+            
+         
+      
+      
+         Inférence grammaticale
+         3
+         
+            
+               Large panorama des différents algorithmes et résultats obtenus récemment pour l'apprentissage de représentations grammaticales de langages
+            
+         
+      
+      
+         Architecture d'applications réparties sur le Web
+         6
+         
+            
+               Cette UE contient les concepts et outils de base pour le développement de systèmes et d'applications distribués sur le Web. Les architectures client serveur seront revisitées, et un focus particulier sera fait sur les servlets, JSP, EJB, J2EE etc.
+            
+         
+      
+      
+         Services Web et Business Process
+         6
+         
+            
+               La première partie de cette UE sera consacrée à la conception, le développement et déploiement de services Web. Les standards de services Web seront étudiés (WDSL, UDDI, SOAP, etc.), et des applications seront réalisées.
+            
+            
+               La seconde partie couvrira les éléments nécessaires à la mise en œuvre des processus métiers : outils graphiques, langages de représentation et d'exécution.
+            
+            
+               Les compléments XML et des technologies Web nécessaires seront étudiés en préambule. La programmation d'applications se fera à l'aide de Java, des dialectes XML orientés processus, ainsi que des logiciels dédiés.
+            
+         
+      
+      
+         Web Multimédia
+         3
+         
+            
+               Cette UE analyse les problèmes fondamentaux et techniques que pose le développement d'applications multimédia (images, vidéo, son, etc.) et l’architecture logicielle nécessaire pour supporter le traitement de telles données. Cela permet d'abord une familiarisation avec les problèmes de streaming, de VoD, etc. Seront ensuite étudiés les problèmes que pose la mise en ligne de telles applications : passage à l’échelle, tolérance aux pannes, etc. Enfin, nous étudions l’intégration des services de téléphonie sur IP dans une telle application tout en considérant la personnalisation d’accès à l’information multimédia et aux services disponibles.
+            
+         
+      
+      
+         Processus d'entreprise - ERP
+         3
+         
+            
+               Un ERP ou progiciel de gestion intégrée est un logiciel qui permet de gérer l'ensemble des processus opérationnels d'une entreprise, en intégrant l'ensemble des fonctions de cette comme la gestion des ressources humaines, la gestion comptable, financière, mais aussi la vente, la distribution, l'approvisionnement, le commerce électronique.
+            
+            
+               Cette UE couvrira aussi bien les aspects techniques et fonctionnels des ERP que la mise en œuvre d'un projet ERP.
+            
+            
+               L'illustration pratique se fera avec un logiciel libre ou du commerce
+            
+         
+      
+      
+         Applications mobiles et réseaux sociaux
+         3
+         
+            
+               Le Web permet aujourd’hui à des entités sociales (individus, groupes, organisations) de s’organiser en réseaux et d’interagir pour diffuser et échanger de l’information et éventuellement des services.
+            
+            
+               Cette UE introduit d’abord les différents sortes de réseaux existants sur Internet (amis, familles, partenaires commerciaux, membres de la même promotion, etc.) et pose le problème du développement et d’analyse des réseaux sociaux. Nous abordons alors les fondements de l’analyse en introduisant la théorie des réseaux et les technologies pour le développement d’une application basée sur les réseaux sociaux.
+            
+            
+               Enfin, on étudie l’impact de la mobilité sur l’utilisation des réseaux sociaux et le développement d’applications mobiles.
+            
+         
+      
+      
+         Gestion de projet
+         3
+         
+            
+               Cette UE vise à inculquer un mode de fonctionnement projet. Les aspects techniques (délais, jalons, indicateurs, etc.) et humains (communication, gestion ds conflits, etc) seront abordés.
+            
+         
+      
+      
+         Nouvelles applications du Traitement Automatique de la Langue (TAL)
+         3
+         
+            
+               État de l'art dans différentes applications du Traitement Automatique des
+            
+            
+               Langues, tel que la traduction automatique, le résumé automatique ainsi que surles traitements de « bas niveau » nécessaires dans la majorité des applications.
+            
+         
+      
+      
+         Projet d'entreprise
+         3
+         
+            
+               L'objet de cet enseignement est de présenter un projet de création et de développementd'entreprise. Le but est de donner une vision horizontale des différents aspects à examiner pour se lancerdans une création d'entreprise, sans la complétude verticale donnée par exemple par un cours de type« école de commerce » sur l'aspect marché. Une vision de Business Plan pourra ainsi être acquise à la finde cet enseignement.
+            
+         
+      
+      
+         Apprentissage numérique
+         3
+         
+            
+               Étude de quelques unes des méthodes les plus performantes en apprentissage numérique : les réseaux de neurones, les modèles de Markov cachés et les machines à vecteurs de support.
+            
+         
+      
+      
+         Fouille de bases de données
+         3
+         
+            
+               Bases mathématiques sur lesquelles reposent les méthodes de fouille de bases de données qui sont également présentées et visent soit l'aide à la décision soit l'administration de bases de données.
+            
+         
+      
+      
+         Entrepôts de données
+         3
+         
+            
+               Étude de la problématique posée par les entrepôts de données (ou data warehouse ou OLAP), depuis leur conception jusqu'aux algorithmes de calcul de cubes de données.
+            
+         
+      
+      
+         Communication scientifique
+         3
+         
+            
+               Lecture d'un article en anglais et exposé oral.
+            
+         
+      
+      
+         Initiation à la recherche
+         27
+         
+      
+      
+         Projet industriel de mise en application
+         6
+         
+            
+               Rédaction du cahier des charges. Conception de l'application. Développement et test. Rédaction d'un mémoire et présentation.
+            
+         
+      
+      
+         Stage en entreprise
+         24
+         
+            
+               Recherche d'un stage. Validation du sujet de stage. Suivi du bon déroulement du stage. Aide à la rédaction du mémoire de stage. Soutenance et évaluation du stage.
+            
+         
+      
+      
+         AU4 : Classification, apprentissage et décision
+         6
+         
+            
+               Méthodes non supervisées et supervisées, classification Bayésienne, évaluation et validation, logique floue
+            
+         
+      
+      
+         IM8 : Segmentation 2
+         3
+         
+            
+               Contours actifs, filtrage non linéaire/diffusion, approches stochastiques (Markov/Bayes)
+            
+         
+      
+      
+         RTC : Concepts et fondamentaux de la modélisation
+         6
+         
+            
+               Concepts et formalismes de base pour la modélisation temporelle et spatiale (modèles de comportements, modèles de structures et modèles géométriques) et la modélisation de l'information et de la connaissance (méthodes de représentation de la connaissance, formalismes logiques, expression de problèmes à l'aide de contraintes).
+            
+         
+      
+      
+         RI1 : Fondements logiques et algorithmiques
+         6
+         
+            
+               Introduction aux notions fondamentales logiques et algorithmiques qui trouvent leurs applications dans plusieurs domaines : systèmes multi-agents, vérification des systèmes, ontologies pour le web sémantique, traitement de connaissance incomplète et révisable, recherche d’information et fouilles des données. Le cours prévoit une partie portant sur la complexité structurelle nécessaire à l’analyse et à l’évaluation des tous formalismes logiques d’un point de vue algorithmique ainsi que sur les algorithmes probabilistes utilisés dans la recherche d’information et fouilles des données.
+            
+         
+      
+      
+         RI2 : Fondements de programmation et de satisfiabilité
+         3
+         
+            
+               Etude des problèmes de satisfaction de contraintes (CSP) et du problème de la satisfiabilité en logique propositionnelle (SAT). Nous nous intéressons en particulier aux questions portant sur la résolution de ces problèmes (méthodes et fondements théoriques) ainsi qu'aux fragments polynomiaux existant en SAT et CSP.
+            
+         
+      
+      
+         RI3 : Représentation des connaissances : Approfondissement et applications
+         3
+         
+            
+               Acquérir des notions avancées en représentation de connaissances et raisonnement dans les domaines de : la révision et la fusion des croyances, l’Answer Set Programming et les théories formelles de l’argumentation.
+            
+         
+      
+      
+         RI4 : Planification, configuration et raisonnement temporel et spatial
+         3
+         
+      
+      
+         RI5 : Agents et ontologies pour les systèmes d'information et le web sémantique
+         3
+         
+      
+      
+         RI6 : Approches avancées de conception de systèmes d'information
+         3
+         
+      
+      
+         RI7 : Extraction et intégration d'information du web
+         3
+         
+      
+      
+         RI8 : Web services
+         3
+         
+      
+      
+         RIS1 : Traitement de données multimodales
+         3
+         
+      
+      
+         IM6 : Animation et simulation physique
+         3
+         
+      
+      
+         RIS2 : Formalises à éléments discrets
+         3
+         
+      
+      
+         RIS3 : Simulation distribuée et modèles hétérogènes
+         3
+         
+      
+      
+         RIS4 : Aide à la décision
+         3
+         
+      
+      
+         R2 : Communication et interaction homme-machine
+         3
+         
+      
+      
+         RE1 : Problématique, démarche, modèles et objects de conception
+         6
+         
+      
+      
+         RE2 : Modèles et objets de conception
+         6
+         
+      
+      
+         RE3 : Systèmes intelligents
+         6
+         
+      
+      
+         RE4 : Conception et architecture
+         6
+         
+      
+      
+         RO1 : Une UE extérieure de 3 crédits (validation requise)
+         3
+         
+      
+      
+         RO2 : Une UE extérieure de 6 crédits (validation requise)
+         6
+         
+      
+      
+         IM10 : Imagerie médicale
+         3
+         
+            
+               Origine et nature des images médicales (les différentes modalités), Analyse des images médicales, Reconstruction et imagerie médicale 3D, Recalage d’images, Applications
+            
+         
+      
+      
+         RS1 : Commande et diagnostic des systèmes complexes
+         6
+         
+      
+      
+         RS2 : Systèmes à structure variable et planification
+         3
+         
+      
+      
+         RS3 : Génie électrique et mécatronique
+         3
+         
+      
+      
+         RS4 : Pronostic des systèmes
+         3
+         
+      
+      
+         RS5 : Procédés à énergie renouvelable
+         3
+         
+      
+      
+         RS6 : Réseaux de neurones
+         3
+         
+      
+      
+         RS7 : Conduite et gestion de la production
+         3
+         
+      
+      
+         IM11 : Modélisation algorithmique, différentielle et discrète
+         3
+         
+            
+               Enveloppe convexe, triangulation de Delaunay, diagramme de Voronoi, Courbures discrètes, Distances discrètes, Axes médians et squelettes, Topologie élémentaire et nombres de Betti
+            
+         
+      
+      
+         IM15 : Modèles pour la production d'images, traitement et visualisation de données géométriques à haute-performance
+         3
+         
+      
+      
+         IM12 : Analyse de vidéo et reconnaissance de forme
+         3
+         
+            
+               Détection de mouvement dans une séquence vidéo, Suivi d’objets, Reconnaissance de formes , Applications : Vidéo surveillance, Détection et suivi de personnes , Suivi des visages et détection des émotions
+            
+         
+      
+      
+         IM13 : Vision industrielle
+         3
+         
+            
+               Introduction sur les capteurs , Vision active, Vision passive , Technique de mosaiquage d’images, Recalage multimodal, Reconstruction 3D, Application : Photogrammétrie, Inspection industrielle
+            
+         
+      
+      
+         IM14 : Modèles pour la production d'images : CAO et jeux vidéo
+         3
+         
+            
+               - la Conception Assistée par Ordinateur,
+            
+            
+               - la Visualisation, la Simulation, la Réalité Virtuelle et Augmentée,
+            
+            
+               - les Jeux Vidéos.
+            
+         
+      
+      
+         R bib : Étude bibliographique
+         6
+         
+      
+      
+         Stage de recherche
+         24
+         
+      
+   
+   
+      
+         M1 Informatique
+         
+            <li><a href="IN9224.html"/></li>
+         
+         
+            Semestre S1
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+            
+            
+               Option de 6 crédits à choisir
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S2
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+            
+            
+               Option de 6 crédits à choisir
+               
+               
+            
+            
+               Option de 9 crédits à choisir
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Informatique fondamentale (IF)
+         
+         
+            Semestre S3 du M2 IF
+            
+               Unités obligatoires
+               
+               
+               
+            
+            
+               15 crédits à choisir (validation requise)
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 du M2 IF
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Sciences de l'information et des systèmes, parcours Informatique
+         
+            <li><a href="IN12632.html"/></li>
+         
+         
+            Semestre S3 du M2 SIS parcours Informatique
+            
+               Unités obligatoires
+               
+            
+            
+               15 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               9 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 du M2 SIS
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Sciences de l'information et des systèmes, parcours Image
+         
+            <li><a href="IN8006.html"/></li>
+         
+         
+            Semestre S3 du M2 SIS parcours Image
+            
+               Unités obligatoires
+               
+            
+            
+               15 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               9 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 du M2 SIS
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Sciences de l'information et des systèmes, parcours Systèmes
+         
+            <li><a href="IN12834.html"/></li>
+         
+         
+            Semestre S3 du M2 SIS parcours Systèmes
+            
+               Unités obligatoires
+               
+            
+            
+               15 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               9 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 du M2 SIS
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Fiabilité et sécurité informatique (FSI)
+         
+            <li><a href="IN3524.html"/></li>
+         
+         
+            Semestre S3 du parcours FSI
+            
+               Unités obligatoires
+               
+               
+               
+               
+            
+            
+               TC des parcours FSI et ISL
+               
+               
+               
+               
+               
+            
+            
+               Unité d'enseignement à bonus
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Fiabilité, sécurité et intégration logicielle (FSIL), parcours Intégration de systèmes logiciels (ISL)
+         
+            <li><a href="IN18.html"/></li>
+         
+         
+            Semestre S3 du parcours ISL
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+            
+            
+               TC des parcours FSI et ISL
+               
+               
+               
+               
+               
+            
+            
+               Unité d'enseignement à bonus
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Génie logiciel (GL)
+         
+         
+            Semestre S3 du parcours GL
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Informatique décisionnelle (ID), parcours Fouille et entrepôts de données (FED)
+         
+            <li><a href="IN7722.html"/></li>
+         
+         
+            Semestre S3 du parcours FED
+            
+               Unités obligatoires
+               
+               
+            
+            
+               Tronc-commun des parcours FED et RO
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               Unité d'enseignement à bonus
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Informatique décisionnelle (ID), parcours Recherche opérationnelle (RO)
+         
+            <li><a href="IN8086.html"/></li>
+         
+         
+            Semestre S3 du parcours RO
+            
+               Unités obligatoires
+               
+               
+               
+            
+            
+               Tronc-commun des parcours FED et RO
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               Unité d'enseignement à bonus
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Recherche d'informations multimédia (RIM)
+         
+         
+            Semestre S3 du M2 RIM
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               3 crédits à choisir parmi
+               
+               
+               
+               
+               
+               
+               
+            
+            
+               Unité d'enseignement à bonus
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+      
+         M2 Spécialité Systèmes d'information répartis (SIR)
+         
+         
+            Semestre S3 du M2 SIR
+            
+               Unités obligatoires
+               
+               
+               
+               
+               
+               
+               
+               
+            
+         
+         
+            Semestre S4 des parcours à finalité professionnelle
+            
+               Unités obligatoires
+               
+               
+            
+         
+         
+      
+   

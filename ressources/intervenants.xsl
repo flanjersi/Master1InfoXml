@@ -53,14 +53,19 @@
     <!-- CREATION DES PAGES INTERVENANTS -->
     <xsl:template match="declaration-intervenants">
         <xsl:for-each select="intervenant">
-            <xsl:result-document href="www/intervenants/{@id}.html">
+            <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
+                    	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                         <link rel="stylesheet" href="master.css" type="text/css"/>
                         <script src="scripts.js"/>
                         <title>Détail d'un intervenant</title>
                     </head>
                     <body>
+                    	<div w3-include-html="menu.html"></div> 
+						<script>
+						includeHTML();
+						</script>
                         <div class="article">
                             <h1>
                                 <xsl:value-of select="prenom"/>
@@ -107,7 +112,7 @@
                                 </xsl:call-template>
                             </div>
                         </div>
-                        <div w3-include-html="intervenants.html"></div> 
+                        <div id="menu-list" w3-include-html="intervenantsMenu.html"></div> 
 						<script>
 						includeHTML();
 						</script>
