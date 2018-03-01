@@ -18,6 +18,7 @@ target/
 ressources/output/
 
 www/
+.metadata
 
 !www/master.css
 !www/script.js
