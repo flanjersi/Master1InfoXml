@@ -8,14 +8,19 @@
             <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
-                        <link rel="stylesheet" href="master.css" type="text/css"/>
-                        <script src="scripts.js"/>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                		<link rel="stylesheet" href="master.css" type="text/css"/>
+                    	<script src="scripts.js"/>
                         <title>
                             Détail de l'unité d'enseignement
                             <xsl:value-of select="@id"/>
                         </title>
                     </head>
                     <body>
+                    	<div w3-include-html="menu.html"></div> 
+						<script>
+						includeHTML();
+						</script>
                         <div class="article">
                             <h1>
                                 <xsl:value-of select="nom"/>

@@ -35,6 +35,8 @@
         <li>
             <a href="{@id}.html">
                 <xsl:value-of select="nom"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="prenom"/>
             </a>
         </li>
     </xsl:template>

@@ -48,9 +48,16 @@
         <xsl:result-document href="www/unites.html" method="html">
         	<html>
                 <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                	<link rel="stylesheet" href="master.css" type="text/css"/>
+                    <script src="scripts.js"/>
                     <title>Table of Contents</title>
                 </head>
                 <body>
+                	<div w3-include-html="menu.html"></div> 
+					<script>
+					includeHTML();
+					</script>
                     <xsl:apply-templates select="//unite" mode="ref">
            				<xsl:sort select="nom" order="ascending"/>
            			</xsl:apply-templates>
@@ -62,9 +69,16 @@
         <xsl:result-document href="www/intervenants.html" method="html">
             <html>
                 <head>
+                	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                	<link rel="stylesheet" href="master.css" type="text/css"/>
+                    <script src="scripts.js"/>
                     <title>Table of Contents</title>
                 </head>
                 <body>
+                	<div w3-include-html="menu.html"></div> 
+					<script>
+					includeHTML();
+					</script>
                     <xsl:apply-templates select="//intervenant" mode="ref">
            				<xsl:sort select="nom" order="ascending"/>
            			</xsl:apply-templates>
@@ -76,9 +90,16 @@
         <xsl:result-document href="www/parcours.html" method="html">
             <html>
                 <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                	<link rel="stylesheet" href="master.css" type="text/css"/>
+                    <script src="scripts.js"/>
                     <title>Table of Contents</title>
                 </head>
                 <body>
+                	<div w3-include-html="menu.html"></div> 
+					<script>
+					includeHTML();
+					</script>
                     <xsl:apply-templates select="//parcours" mode="ref">
            				<xsl:sort select="nom" order="ascending"/>
            			</xsl:apply-templates>
