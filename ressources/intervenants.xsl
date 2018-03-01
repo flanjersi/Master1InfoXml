@@ -76,7 +76,7 @@
                             </h1>
                             <div class="box">
                                 <p>
-                                    <img class="logo" src="email.svg" alt-text="Email : "/>
+                                    <img class="logo" src="img/email.svg" alt-text="Email : "/>
                                     <xsl:choose>
                                         <xsl:when test="mail/text()">
                                             <xsl:value-of select="mail"/>
@@ -86,10 +86,10 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <br/>
-                                    <img class="logo" src="site.svg" alt-text="Site web : "/>
+                                    <img class="logo" src="img/site.svg" alt-text="Site web : "/>
                                     <xsl:choose>
                                         <xsl:when test="site-web/text()">
-                                            <xsl:value-of select="site-web"/>
+                                            <xsl:value-of select="site-web"/>"
                                         </xsl:when>
                                         <xsl:otherwise>
                                             Non renseigné

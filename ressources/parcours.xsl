@@ -3,7 +3,7 @@
 
     <xsl:template match="declaration-parcours">
         <xsl:for-each select="parcours">
-            <xsl:result-document href="www/{nom}.html">
+            <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
                     	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
