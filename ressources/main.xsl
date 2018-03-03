@@ -58,9 +58,13 @@
 					<script>
 					includeHTML();
 					</script>
-                    <xsl:apply-templates select="//unite" mode="ref">
-           				<xsl:sort select="nom" order="ascending"/>
-           			</xsl:apply-templates>
+					<div class="article">
+						<ul class="list">
+	                    <xsl:apply-templates select="//unite" mode="ref">
+	           				<xsl:sort select="nom" order="ascending"/>
+	           			</xsl:apply-templates>
+	           			</ul>
+	           		</div>
                 </body>
             </html>
         </xsl:result-document>
@@ -79,9 +83,13 @@
 					<script>
 					includeHTML();
 					</script>
-                    <xsl:apply-templates select="//intervenant" mode="ref">
-           				<xsl:sort select="nom" order="ascending"/>
-           			</xsl:apply-templates>
+					<div class="article">
+						<ul class="list">
+	                    <xsl:apply-templates select="//intervenant" mode="ref">
+	           				<xsl:sort select="nom" order="ascending"/>
+	           			</xsl:apply-templates>
+	           			</ul>
+           			</div>
                 </body>
             </html>
         </xsl:result-document>
@@ -100,9 +108,13 @@
 					<script>
 					includeHTML();
 					</script>
-                    <xsl:apply-templates select="//parcours" mode="ref">
-           				<xsl:sort select="nom" order="ascending"/>
-           			</xsl:apply-templates>
+					<div class="article">
+						<ul class="list">
+	                    <xsl:apply-templates select="//parcours" mode="ref">
+	           				<xsl:sort select="nom" order="ascending"/>
+	           			</xsl:apply-templates>
+	           			</ul>
+           			</div>
                 </body>
             </html>
         </xsl:result-document>

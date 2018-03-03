@@ -2,6 +2,7 @@
 .classpath
 .project
 .settings/
+.metadata
 
 # Intellij
 .idea/
@@ -17,12 +18,6 @@ target/
 
 ressources/output/
 
-www/
-.metadata
-
-!www/master.css
-!www/script.js
-!www/img
 
 
 
