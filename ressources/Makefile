@@ -1,5 +1,10 @@
 
-all: dtd xsd #web tidy xq java
+all: dtd xsd web xq java
+
+#tidy xq
+
+makeDir:
+	mkdir -p www
 
 dtd:
 	xmllint --valid --noout donnees-master/data.xml
@@ -7,14 +12,16 @@ dtd:
 xsd:
 	xmllint --noout --schema donnees-master/data.xsd donnees-master/data.xml
 
-#web:
-
-
+web: makeDir
+	java -jar saxon/saxon9he.jar -xsl:main.xsl donnees-master/data.xml
 
 #tidy:
 
 
-#xq:
+xq: makeDir
+	java -cp saxon/saxon9he.jar net.sf.saxon.Query "-q:xQuery/request.xq" > www/xq.html
 
 
-#java:
+java:
+    - javac App.java
+    - java App.class
