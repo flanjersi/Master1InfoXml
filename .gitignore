@@ -2,6 +2,7 @@
 .classpath
 .project
 .settings/
+.metadata
 
 # Intellij
 .idea/
@@ -15,9 +16,9 @@
 log/
 target/
 
-ressources/www/*
+ressources/output/
 
-!ressources/www/ressources
+
 
 
 

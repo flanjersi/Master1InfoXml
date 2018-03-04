@@ -33,15 +33,17 @@
 
     <xsl:template match="intervenant" mode="ref">
         <li>
-            <a href="intervenants/{@id}.html">
+            <a href="{@id}.html">
                 <xsl:value-of select="nom"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="prenom"/>
             </a>
         </li>
     </xsl:template>
 
     <xsl:template match="ref-intervenant">
         <li>
-            <a href="intervenants/{@ref}.html">
+            <a href="{@ref}.html">
                 <xsl:value-of select="id(@ref)/nom"/>
                 <xsl:text/>
                 <xsl:value-of select="id(@ref)/prenom"/>
@@ -56,12 +58,16 @@
             <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
-                        <meta charset="UTF-8"/>
+                    	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                         <link rel="stylesheet" href="master.css" type="text/css"/>
                         <script src="scripts.js"/>
                         <title>Détail d'un intervenant</title>
                     </head>
                     <body>
+                    	<div w3-include-html="menu.html"></div> 
+						<script>
+						includeHTML();
+						</script>
                         <div class="article">
                             <h1>
                                 <xsl:value-of select="prenom"/>
@@ -70,7 +76,7 @@
                             </h1>
                             <div class="box">
                                 <p>
-                                    <img class="logo" src="email.svg" alt-text="Email : "/>
+                                    <img class="logo" src="img/email.svg" alt-text="Email : "/>
                                     <xsl:choose>
                                         <xsl:when test="mail/text()">
                                             <xsl:value-of select="mail"/>
@@ -80,10 +86,10 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <br/>
-                                    <img class="logo" src="site.svg" alt-text="Site web : "/>
+                                    <img class="logo" src="img/site.svg" alt-text="Site web : "/>
                                     <xsl:choose>
                                         <xsl:when test="site-web/text()">
-                                            <xsl:value-of select="site-web"/>
+                                            <xsl:value-of select="site-web"/>"
                                         </xsl:when>
                                         <xsl:otherwise>
                                             Non renseigné
@@ -108,7 +114,7 @@
                                 </xsl:call-template>
                             </div>
                         </div>
-                        <div w3-include-html="intervenants.html"></div> 
+                        <div id="menu-list" w3-include-html="intervenantsMenu.html"></div> 
 						<script>
 						includeHTML();
 						</script>
