@@ -32,7 +32,7 @@
         <xsl:result-document href="www/intervenants.html" method="html">
             <xsl:apply-templates select="//declaration-intervenants" mode="menu"/>
         </xsl:result-document>
-        
+
         <!-- CREATION PAGE LISTE DES PARCOURS -->
         <xsl:result-document href="www/parcours.html" method="html">
             <xsl:apply-templates select="//declaration-parcours" mode="menu"/>

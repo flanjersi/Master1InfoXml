@@ -15,16 +15,9 @@
 log/
 target/
 
-ressources/output/
-ressources/www/intervenants/
-ressources/www/unites/
-ressources/www/parcours/
+ressources/www/*
 
-ressources/www/index.html
-ressources/www/intervenants.html
-ressources/www/unites.html
-
-
+!ressources/www/ressources
 
 
 

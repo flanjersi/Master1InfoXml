@@ -33,7 +33,7 @@
 
     <xsl:template match="intervenant" mode="ref">
         <li>
-            <a href="{@id}.html">
+            <a href="intervenants/{@id}.html">
                 <xsl:value-of select="nom"/>
             </a>
         </li>
@@ -41,7 +41,7 @@
 
     <xsl:template match="ref-intervenant">
         <li>
-            <a href="{@ref}.html">
+            <a href="intervenants/{@ref}.html">
                 <xsl:value-of select="id(@ref)/nom"/>
                 <xsl:text/>
                 <xsl:value-of select="id(@ref)/prenom"/>
@@ -53,9 +53,10 @@
     <!-- CREATION DES PAGES INTERVENANTS -->
     <xsl:template match="declaration-intervenants">
         <xsl:for-each select="intervenant">
-            <xsl:result-document href="www/intervenants/{@id}.html">
+            <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
+                        <meta charset="UTF-8"/>
                         <link rel="stylesheet" href="master.css" type="text/css"/>
                         <script src="scripts.js"/>
                         <title>Détail d'un intervenant</title>

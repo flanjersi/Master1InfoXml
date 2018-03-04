@@ -5,10 +5,11 @@
 
     <xsl:template match="declaration-unite">
         <xsl:for-each select="unite">
-            <xsl:result-document href="www/unites/{@id}.html">
+            <xsl:result-document href="www/{@id}.html">
                 <html>
                     <head>
-                        <link rel="stylesheet" href="master.css" type="text/css"/>
+                        <meta charset="UTF-8"/>
+                        <link rel="stylesheet" href="../master.css" type="text/css"/>
                         <script src="scripts.js"/>
                         <title>
                             Détail de l'unité d'enseignement

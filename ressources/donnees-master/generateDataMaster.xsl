@@ -12,13 +12,13 @@
 		<master>
 			<declaration-intervenants>
 				<xsl:for-each select="objet[@type = 'personne']">
-					<intervenant id="{info[@nom = 'idext']/@value}">
-						<nom>
-							<xsl:value-of select="info[@nom = 'nom']/@value" />
-						</nom>
+					<intervenant id="{@id}">
 						<prenom>
 							<xsl:value-of select="info[@nom ='prenom']/@value" />
 						</prenom>
+						<nom>
+							<xsl:value-of select="info[@nom = 'nom']/@value"/>
+						</nom>
 						<mail>
 							<xsl:value-of select="info[@nom = 'mail']/@value" />
 						</mail>
@@ -46,6 +46,12 @@
 						<resume>
 							<xsl:copy-of select="info[@nom = 'contenu']/node()" />
 						</resume>
+						<lieu-enseignement></lieu-enseignement>
+						<intervenants>
+							<xsl:for-each select="info[@nom='responsables']">
+								<ref-intervenant ref="{@value}"/>
+							</xsl:for-each>
+						</intervenants>
 					</unite>
 				</xsl:for-each>
 			</declaration-unite>
@@ -55,6 +61,7 @@
 						<nom>
 							<xsl:value-of select="info[@nom = 'nom']/@value" />
 						</nom>
+						<description></description>
 						<responsables>
 							<xsl:for-each select="info[@nom = 'responsables']">
 								<ref-intervenant ref="{@value}"></ref-intervenant>
@@ -87,9 +94,9 @@
 							</semestre>
 						</xsl:for-each>
 
-						<debouche>
+						<debouches>
 							<xsl:copy-of select="info[@nom = 'debouches']/node()" />
-						</debouche>
+						</debouches>
 					</parcours>
 				</xsl:for-each>
 			</declaration-parcours>

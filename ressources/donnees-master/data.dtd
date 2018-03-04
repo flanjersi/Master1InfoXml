@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!ENTITY % blockText "(#PCDATA | p | a | table | ul )*">
+        <!ENTITY % blockText "(#PCDATA | p | a | table | ul | t)*">
 
-<!ENTITY % fontstyle "i | b | a">
+        <!ENTITY % fontstyle "i | b | a | br | t">
 
 
 <!ELEMENT li %blockText;>
@@ -17,15 +17,18 @@
 
 <!ELEMENT b (#PCDATA)>
 <!ELEMENT i (#PCDATA)>
+        <!ELEMENT br (#PCDATA)>
+        <!ELEMENT t (#PCDATA)>
+
 
 
 <!ELEMENT a ( #PCDATA | %fontstyle;)*>
 <!ATTLIST a href CDATA #IMPLIED>
 
+        <!--, declaration-metier-->
+        <!ELEMENT  master    (declaration-intervenants, declaration-unite, declaration-parcours )>
 
-<!ELEMENT  master	(declaration-intervenants, declaration-unite, declaration-parcours, declaration-metier)>
-
-<!ELEMENT  intervenants (ref-intervenant+)>
+        <!ELEMENT  intervenants (ref-intervenant*)>
 <!ELEMENT  ref-intervenant	(#PCDATA)>
 <!ATTLIST  ref-intervenant ref IDREF  #REQUIRED>
 
@@ -50,20 +53,21 @@
 
 <!ELEMENT  declaration-parcours (parcours)*>
 <!ELEMENT  parcours  (nom, description, responsables, semestre+, debouches)>
-<!ELEMENT  responsables (ref-intervenant+)>
+        <!ATTLIST  parcours id ID #REQUIRED>
+        <!ELEMENT  responsables (ref-intervenant*)>
 
-<!ELEMENT  declaration-metier (metier)*>
-<!ELEMENT  metier  (nom, description)>
-<!ATTLIST  metier id ID #REQUIRED>
-
+        <!--
+        <!ELEMENT  declaration-metier (metier)*>
+        <!ELEMENT  metier  (nom, description)>
+        <!ATTLIST  metier id ID #REQUIRED>
+        -->
 <!ELEMENT  debouches  (ref-metier)*>
 <!ELEMENT  ref-metier (#PCDATA)>
 <!ATTLIST  ref-metier ref IDREF  #REQUIRED>
 
-
 <!ELEMENT  description  %blockText;>
 
-<!ELEMENT  semestre  (ens-UE+)>
+        <!ELEMENT  semestre  (nom, ens-UE+)>
 <!ELEMENT  ens-UE  (role, ref-unite+)>
 <!ELEMENT  role		%blockText;>
 <!ELEMENT  ref-unite  (#PCDATA)>

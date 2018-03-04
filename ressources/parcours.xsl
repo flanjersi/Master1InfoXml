@@ -3,9 +3,10 @@
 
     <xsl:template match="declaration-parcours">
         <xsl:for-each select="parcours">
-            <xsl:result-document href="www/parcours/{nom}.html">
+			<xsl:result-document href="www/{nom}.html">
                 <html>
                     <head>
+						<meta charset="UTF-8"/>
                     	<link rel="stylesheet" href="master.css" type="text/css"/>
                         <script src="scripts.js"/>
                         <title>Détail d'un parcours</title>
