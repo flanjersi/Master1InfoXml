@@ -45,7 +45,7 @@
         <li>
             <a href="{@ref}.html">
                 <xsl:value-of select="id(@ref)/nom"/>
-                <xsl:text/>
+                <xsl:text> </xsl:text>
                 <xsl:value-of select="id(@ref)/prenom"/>
             </a>
         </li>
@@ -76,7 +76,7 @@
                             </h1>
                             <div class="box">
                                 <p>
-                                    <img class="logo" src="img/email.svg" alt-text="Email : "/>
+                                    <img class="logo" src="img/email.svg" alt="Email : "/>
                                     <xsl:choose>
                                         <xsl:when test="mail/text()">
                                             <xsl:value-of select="mail"/>
@@ -86,10 +86,12 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <br/>
-                                    <img class="logo" src="img/site.svg" alt-text="Site web : "/>
+                                    <img class="logo" src="img/site.svg" alt="Site web : "/>
                                     <xsl:choose>
                                         <xsl:when test="site-web/text()">
-                                            <xsl:value-of select="site-web"/>"
+                                            <a href="http://{site-web/text()}">
+                                                <xsl:value-of select="site-web"/>
+                                            </a>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             Non renseigné
@@ -125,27 +127,25 @@
     </xsl:template>
 
     <xsl:template match="declaration-intervenants" mode="menu">
-        <div id="menu-list">
-            <div id="title">INTERVENANTS</div>
-            <ul id="list-ul">
-                <xsl:for-each select="intervenant">
-                    <li>
-                        <a href="{@id}.html">
-                            <xsl:value-of select="prenom"/>
-                            <xsl:text> </xsl:text>
-                            <xsl:value-of select="nom"/>
-                        </a>
-                    </li>
-                </xsl:for-each>
-            </ul>
-            <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
-        </div>
+        <div id="title">INTERVENANTS</div>
+        <ul id="list-ul">
+            <xsl:for-each select="intervenant">
+                <li>
+                    <a href="{@id}.html">
+                        <xsl:value-of select="prenom"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="nom"/>
+                    </a>
+                </li>
+            </xsl:for-each>
+        </ul>
+        <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
 
     <xsl:template name="enseignements-assure">
         <xsl:param name="id-enseignant"/>
-        <ul>
+        <ul class="list">
             <xsl:for-each select="//unite[ intervenants [ref-intervenant [ @ref = $id-enseignant ]]]">
                 <li>
                     <a href="{@id}.html">
@@ -159,10 +159,10 @@
 
     <xsl:template name="responsable-parcours">
         <xsl:param name="id-enseignant"/>
-        <ul>
+        <ul class="list">
             <xsl:for-each select="//parcours[ responsables [ref-intervenant [ @ref = $id-enseignant ]]]">
                 <li>
-                    <a href="{nom}.html">
+                    <a href="{@id}.html">
                         <xsl:value-of select="nom"/>
                     </a>
                 </li>

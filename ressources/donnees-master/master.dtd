@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-        <!ENTITY % blockText "(#PCDATA | p | a | table | ul | t)*">
+        <!ENTITY % blockText "(#PCDATA | p | a | table | ul)*">
 
-        <!ENTITY % fontstyle "i | b | a | br | t">
+        <!ENTITY % fontstyle "i | b | a | br">
 
 
         <!ELEMENT li %blockText;>
@@ -51,16 +51,10 @@
         <!ELEMENT  lieu-enseignement %blockText;>
 
         <!ELEMENT  declaration-parcours (parcours)*>
-        <!ELEMENT  parcours  (nom, description, responsables, semestre+, debouches)>
+        <!ELEMENT  parcours  (nom, description, responsables, semestre+)>
         <!ATTLIST  parcours id ID #REQUIRED>
         <!ELEMENT  responsables (ref-intervenant*)>
 
-        <!--
-        <!ELEMENT  declaration-metier (metier)*>
-        <!ELEMENT  metier  (nom, description)>
-        <!ATTLIST  metier id ID #REQUIRED>
-        -->
-        <!ELEMENT  debouches  (ref-metier)*>
         <!ELEMENT  ref-metier (#PCDATA)>
         <!ATTLIST  ref-metier ref IDREF  #REQUIRED>
 

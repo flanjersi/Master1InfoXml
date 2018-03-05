@@ -100,10 +100,6 @@
 								</xsl:for-each>
 							</semestre>
 						</xsl:for-each>
-
-						<debouches>
-							<xsl:copy-of select="info[@nom = 'debouches']/node()" />
-						</debouches>
 					</parcours>
 				</xsl:for-each>
 			</declaration-parcours>

@@ -22,9 +22,7 @@
                             </h1>
                             <div class="box">
                                 <h2>Présentation</h2>
-                                <p>
-                                    <xsl:copy-of select="description/node()"/>
-                                </p>
+                                <xsl:copy-of select="description/node()"/>
                             </div>
                             <div class="box">
                                 <h2>Programme des enseignements</h2>
@@ -50,7 +48,7 @@
         <ul>
             <xsl:for-each select="ens-UE">
                 <li>
-                    <xsl:value-of select="role"/>
+                    <xsl:value-of select="nom"/>
                     <ul>
                         <xsl:for-each select="ref-unite">
                             <li>
@@ -69,15 +67,13 @@
     </xsl:template>
 
     <xsl:template match="declaration-parcours" mode="menu">
-        <div id="menu-list">
-            <div id="title">PARCOURS</div>
-            <ul id="list-ul">
-                <xsl:apply-templates select="parcours" mode="ref">
-                    <xsl:sort select="nom" order="ascending"/>
-                </xsl:apply-templates>
-            </ul>
-            <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
-        </div>
+        <div id="title">PARCOURS</div>
+        <ul id="list-ul">
+            <xsl:apply-templates select="parcours" mode="ref">
+                <xsl:sort select="nom" order="ascending"/>
+            </xsl:apply-templates>
+        </ul>
+        <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
     <xsl:template match="parcours" mode="ref">

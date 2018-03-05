@@ -25,3 +25,5 @@ xq: makeDir
 javaLunch:
 	cd java; javac App.java; java App ../master.xml; cd ..
 
+clear:
+	cd www; rm *.html ; cd ..
