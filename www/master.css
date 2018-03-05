@@ -6,10 +6,11 @@
   margin-bottom: 5px;
   width: 55vw;
   margin-left: 20vw;
-  margin-top: 15px;
+  margin-top: 60px;
 }
 
 body {
+	font-family: Helvetica, Arial, sans-serif;
 	background-color: #e9ebee;
 	margin: 0px;
 }
@@ -39,25 +40,18 @@ h1, h2, h3{
   border-radius: 50%
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 a {
   color: black;
 }
 
 #searchMenu {
-    background-image: url('search.png');
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    background-image: url('img/search.svg');
+    background-repeat: no-repeat;
+    width: 81%;
+    font-size: 16px;
+    padding: 12px 20px 12px 45px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
 }
 
 #menu-list {
@@ -71,6 +65,9 @@ a {
 }
 
 #menu-list ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
   overflow-y: auto;
   height: 81vh;
   width: 100%;
@@ -82,12 +79,14 @@ a {
   padding-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
-white-space: nowrap;
+  white-space: nowrap;
 }
 
-#menu-list li:hover, .list li:hover {
+#menu-list li:hover {
   background-color: #d3d5d7;
 }
+
+
 
 #menu-list #title {
   padding: 8px 0 8px 8px;
@@ -98,8 +97,27 @@ white-space: nowrap;
   color: #333;
 }
 
+.list li:hover a {
+	background-color: #4267b2;
+	color: #fff;
+}
+
+.list a {
+	padding: inherit;
+	display: inline-block;
+	width: 99%;
+	padding: 5px;
+}
+
+.list {
+	border: 1px solid #ccc;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .list li {
-	padding: 2px;
+	border-bottom: 1px solid #ccc;
 }
 
 .topnav {
@@ -109,6 +127,8 @@ white-space: nowrap;
     overflow: hidden;
     background-color: #4267b2;
     width: 100%;
+	position: fixed;
+	top: 0;
 }
 
 .topnav li {
@@ -128,6 +148,7 @@ white-space: nowrap;
 
 @media screen and (max-width: 600px){
     .topnav li.right, .topnav li {float: none;}
+	.topnav {position: static;}
 	#menu-list {display: none; position: static;}
 	.article {margin: 1%; width: 95%;}
 }

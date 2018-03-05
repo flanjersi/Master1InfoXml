@@ -37,7 +37,7 @@
 
                             <div class="box">
                                 <h3>Liste des intervenants</h3>
-                                <ul>
+                                <ul class="list">
                                     <xsl:apply-templates select="intervenants"/>
                                 </ul>
                             </div>
@@ -54,15 +54,13 @@
 
 
     <xsl:template match="declaration-unite" mode="menu">
-        <div id="menu-list">
-            <div id="title">UNITES</div>
-            <ul id="list-ul">
-                <xsl:apply-templates select="unite" mode="ref">
-                	<xsl:sort select="nom" order="ascending"/>
-                </xsl:apply-templates>
-            </ul>
-            <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
-        </div>
+		<div id="title">UNITES</div>
+		<ul id="list-ul">
+		    <xsl:apply-templates select="unite" mode="ref">
+		    	<xsl:sort select="nom" order="ascending"/>
+		    </xsl:apply-templates>
+		</ul>
+		<input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
 
@@ -97,8 +95,8 @@
             <xsl:value-of select="plan"/>
         </p>
         <h3>Liste des intervenants</h3>
-        <ul>
-            <xsl:apply-templates select="intervenants"/>
+        <ul class="list">
+            <xsl:apply-templates select="intervenant" mode="ref"/>
         </ul>
     </xsl:template>
 
