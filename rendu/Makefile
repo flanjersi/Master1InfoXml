@@ -1,5 +1,5 @@
 
-all: dtd xsd web xq javaLunch
+all: dtd xsd web tidy xq javaLunch
 
 #tidy xq
 
@@ -15,8 +15,8 @@ xsd:
 web: makeDir
 	java -jar saxon/saxon9he.jar -xsl:xsl/main.xsl master.xml
 
-#tidy:
-
+tidy:
+	chmod +x tidyFolder.sh;./tidyFolder.sh
 
 xq: makeDir
 	java -cp saxon/saxon9he.jar net.sf.saxon.Query "-q:xq.txt" > www/xq.html
