@@ -15,7 +15,7 @@ import java.io.File;
 
 public class App 
 {
-    private static Document resultDom;
+    private static Document resultDoc;
     private static Element root;
 
     /**
@@ -33,7 +33,7 @@ public class App
 
             if(!node.getNodeName().equals("nom")) continue;
 
-            resultDom.adoptNode(node);
+            resultDoc.adoptNode(node);
             root.appendChild(node);
         }
     }
@@ -93,11 +93,11 @@ public class App
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(new File(fileName));
 
-        resultDom = builder.newDocument();
+        resultDoc = builder.newDocument();
 
-        root = resultDom.createElement("nomUnites");
+        root = resultDoc.createElement("nomUnites");
 
-        resultDom.appendChild(root);
+        resultDoc.appendChild(root);
 
         parse(document);
 
@@ -108,7 +108,7 @@ public class App
         transformer.setOutputProperty(OutputKeys.ENCODING, "utf-8");
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
-        transformer.transform(new DOMSource(resultDom), new StreamResult(System.out));
+        transformer.transform(new DOMSource(resultDoc), new StreamResult(System.out));
 
     }
 }

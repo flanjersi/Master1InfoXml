@@ -38,21 +38,17 @@
                     for $parcours in doc("master.xml")/master/declaration-parcours/parcours
                     order by $parcours/nom
 
-                        for $semestre in $parcours/semestre
+                        for $refUe in $parcours/semestre/ens-UE/ref-unite
 
-                            for $ensUe in $semestre/ens-UE
+                            let $uniteParcours := doc("master.xml")/id(string($refUe/@ref))
 
-                                for $refUe in $ensUe/ref-unite
-                                let $uniteParcours := doc("master.xml")/id(string($refUe/@ref))
-
-                                    for $enseignantParcours in $uniteParcours/intervenants/ref-intervenant
-                                    where ($enseignantParcours/@ref = $intervenant/@id)
-                                    return $parcours/nom/text()
+                                for $enseignantParcours in $uniteParcours/intervenants/ref-intervenant[ @ref = $intervenant/@id]
+                                return $parcours/nom/text()
                 )
 
                 let $distinctParcours := distinct-values($seqParcours)
 
-                return if( not( empty( $distinctParcours ) )) then (
+                return if( exists( $distinctParcours ) ) then (
                     <ul>
                         {
                             for $itemParcours in $distinctParcours

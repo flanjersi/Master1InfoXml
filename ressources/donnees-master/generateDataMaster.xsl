@@ -4,7 +4,7 @@
 
 	<xsl:output omit-xml-declaration="no"
 				indent="yes"
-				doctype-system="data.dtd"/>
+				doctype-system="master.dtd"/>
     <xsl:strip-space elements="*"/>
 
 
@@ -24,9 +24,9 @@
 						</mail>
 
 						<site-web>
-                            <xsl:value-of select="translate(lower-case(info[@nom ='prenom']/@value), ' ', '-')"/>
+                            <xsl:value-of select="replace(lower-case(info[@nom ='prenom']/@value), ' ', '-')"/>
                             <xsl:text>.</xsl:text>
-                            <xsl:value-of select="translate(lower-case(info[@nom = 'nom']/@value), ' ', '-')"/>
+                            <xsl:value-of select="replace(lower-case(info[@nom = 'nom']/@value), ' ', '-')"/>
                             <xsl:text>.perso.luminy.univ-amu.fr</xsl:text>
 						</site-web>
 					</intervenant>
@@ -72,20 +72,27 @@
 								<nom>
 									<xsl:value-of select="info[@nom = 'nom']/@value"></xsl:value-of>
 								</nom>
+
 								<ens-UE>
-									<role>Unités obligatoires</role>
-									<xsl:for-each
+                                    <role>obligatoire</role>
+                                    <nom>Unités obligatoires</nom>
+                                    <xsl:for-each
 										select="info[@nom = 'structure' and id(@value)/@type = 'enseignement']">
 										<ref-unite ref="{@value}" />
 									</xsl:for-each>
 								</ens-UE>
 
+
+
 								<xsl:for-each
 									select="info[@nom = 'structure' and id(@value)/@type != 'enseignement']">
 									<ens-UE>
-										<role>
+                                        <role>
+                                            <xsl:value-of select="id(@value)/@type"/>
+                                        </role>
+										<nom>
 											<xsl:value-of select="id(@value)/info[@nom = 'nom']/@value" />
-										</role>
+										</nom>
 										<xsl:for-each select="id(@value)/info[@nom = 'structure']">
 											<ref-unite ref="{@value}"></ref-unite>
 										</xsl:for-each>
