@@ -48,7 +48,9 @@
         <!ELEMENT  credit    (#PCDATA)>
         <!ELEMENT  resume    %blockText;>
         <!ELEMENT  plan    %blockText;>
-        <!ELEMENT  lieu-enseignement %blockText;>
+        <!ELEMENT  lieu-enseignement (lieu*)>
+        <!ELEMENT  lieu (#PCDATA)>
+
 
         <!ELEMENT  declaration-parcours (parcours)*>
         <!ELEMENT  parcours  (nom, description, responsables, semestre+)>

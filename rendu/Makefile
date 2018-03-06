@@ -1,19 +1,24 @@
+XML_FILE=master.xml
+
+DTD_FILE=master.dtd
+XSD_FILE=master.xsd
+
+
 
 all: dtd xsd web tidy xq javaLunch
 
-#tidy xq
 
 makeDir:
 	mkdir -p www
 
 dtd:
-	xmllint --valid --noout master.xml
+	xmllint --valid --noout $(XML_FILE)
 
 xsd:
-	xmllint --noout --schema master.xsd master.xml
+	xmllint --noout --schema $(XSD_FILE) $(XML_FILE)
 
 web: makeDir
-	java -jar saxon/saxon9he.jar -xsl:xsl/main.xsl master.xml
+	java -jar saxon/saxon9he.jar -xsl:xsl/main.xsl $(XML_FILE)
 
 tidy:
 	chmod +x tidyFolder.sh;./tidyFolder.sh
@@ -23,7 +28,7 @@ xq: makeDir
 
 
 javaLunch:
-	cd java; javac App.java; java App ../master.xml; cd ..
+	cd java; javac App.java; java App ../$(XML_FILE); cd ..
 
 clear:
 	cd www; rm *.html ; cd ..
