@@ -22,7 +22,13 @@
                             </h1>
                             <div class="box">
                                 <h2>Présentation</h2>
-                                <xsl:copy-of select="description/node()"/>
+                                <xsl:if test="empty(description/node())">
+                                    Non renseigné
+                                </xsl:if>
+
+                                <xsl:if test="exists(description/node())">
+                                    <xsl:copy-of select="description/node()"/>
+                                </xsl:if>
                             </div>
                             <div class="box">
                                 <h2>Programme des enseignements</h2>

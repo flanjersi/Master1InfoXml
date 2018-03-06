@@ -29,17 +29,40 @@
                             <xsl:value-of select="credit"/>
                             <br/>
                             Lieu d'enseignement :
-                            <xsl:value-of select="lieu-enseignement"/>
+                            <xsl:variable name="lieuEnseignement" select="lieu-enseignement"/>
+
+                            <xsl:if test="empty($lieuEnseignement/node())">
+                                Non renseigné
+                            </xsl:if>
+
+                            <xsl:if test="exists($lieuEnseignement/node())">
+                                <xsl:for-each select="$lieuEnseignement">
+                                    <xsl:value-of select="lieu"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:for-each>
+                            </xsl:if>
                             <div class="box">
                                 <h3>Description :</h3>
-                                <xsl:copy-of select="resume/node()"/>
+                                <xsl:if test="empty(resume/node())">
+                                    Non renseigné
+                                </xsl:if>
+
+                                <xsl:if test="exists(resume/node())">
+                                    <xsl:copy-of select="resume/node()"/>
+                                </xsl:if>
                             </div>
 
                             <div class="box">
                                 <h3>Liste des intervenants</h3>
-                                <ul class="list">
-                                    <xsl:apply-templates select="intervenants"/>
-                                </ul>
+                                <xsl:if test="empty(intervenants/node())">
+                                    Non renseigné
+                                </xsl:if>
+
+                                <xsl:if test="exists(intervenants/node())">
+                                    <ul class="list">
+                                        <xsl:apply-templates select="intervenants"/>
+                                    </ul>
+                                </xsl:if>
                             </div>
                         </div>
                         <div id="menu-list" w3-include-html="unitesMenu.html"></div>
@@ -52,7 +75,6 @@
         </xsl:for-each>
     </xsl:template>
 
-
     <xsl:template match="declaration-unite" mode="menu">
         <div id="title">UNITES</div>
         <ul id="list-ul">
@@ -63,42 +85,6 @@
         <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
-
-    <xsl:template name="unites">
-        ---------------------------------------------------
-        <h1>Unités</h1>
-        <xsl:apply-templates select="//unite"/>
-        ---------------------------------------------------
-        <br/>
-    </xsl:template>
-
-    <xsl:template match="unite">
-        <br/>
-        ---------------------
-        <h2 id="{@id}">
-            <xsl:value-of select="nom"/>
-        </h2>
-        Credit :
-        <xsl:value-of select="credit"/>
-        <br/>
-        Lieu d'enseignement :
-        <xsl:value-of select="lieu-enseignement"/>
-        <br/>
-        <p>
-            Résumé :
-            <br/>
-            <xsl:value-of select="resume"/>
-        </p>
-        <p>
-            Plan :
-            <br/>
-            <xsl:value-of select="plan"/>
-        </p>
-        <h3>Liste des intervenants</h3>
-        <ul class="list">
-            <xsl:apply-templates select="intervenant" mode="ref"/>
-        </ul>
-    </xsl:template>
 
     <xsl:template match="unite" mode="ref">
         <li>

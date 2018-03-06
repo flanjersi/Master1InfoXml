@@ -1300,7 +1300,10 @@
                     avancés.
                 </p>
             </resume>
-            <lieu-enseignement/>
+            <lieu-enseignement>
+                <lieu>Luminy</lieu>
+                <lieu>Saint-Charles</lieu>
+            </lieu-enseignement>
             <intervenants/>
         </unite>
         <unite id="ENSINCU47">

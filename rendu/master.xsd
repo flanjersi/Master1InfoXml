@@ -71,7 +71,7 @@
             </xs:element>
 
             <xs:element type="resumeType" name="resume"/>
-            <xs:element type="lieuIntervenantType" name="lieu-enseignement"/>
+            <xs:element type="lieuEnseignementType" name="lieu-enseignement"/>
             <xs:element type="intervenantsType" name="intervenants"/>
         </xs:sequence>
 
@@ -79,10 +79,10 @@
 
     </xs:complexType>
 
-    <xs:complexType name="lieuIntervenantType" mixed="true">
+    <xs:complexType name="lieuEnseignementType" mixed="true">
         <xs:sequence>
             <xs:sequence>
-                <xs:element name="lieu-enseignement" maxOccurs="4" minOccurs="0">
+                <xs:element name="lieu" maxOccurs="4" minOccurs="0">
                     <xs:simpleType>
                         <xs:restriction base="xs:string">
                             <xs:enumeration value="Luminy"/>
