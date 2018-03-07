@@ -2,7 +2,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
-
+	<!-- CREATION DES PAGES UNITE -->
     <xsl:template match="declaration-unite">
         <xsl:for-each select="unite">
             <xsl:result-document href="www/{@id}.html">
@@ -75,6 +75,7 @@
         </xsl:for-each>
     </xsl:template>
 
+	<!-- Genere le menu de droite des unites -->
     <xsl:template match="declaration-unite" mode="menu">
         <div id="title">UNITES</div>
         <ul id="list-ul">
@@ -85,7 +86,7 @@
         <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
-
+	<!-- Genere la liste des unites dans la page unites.html -->
     <xsl:template match="unite" mode="ref">
         <li>
             <a href="{@id}.html">

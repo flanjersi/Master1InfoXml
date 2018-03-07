@@ -1,6 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
-
+	<!-- CREATION DES PAGES PARCOURS -->
     <xsl:template match="declaration-parcours">
         <xsl:for-each select="parcours">
             <xsl:result-document href="www/{@id}.html">
@@ -72,6 +72,7 @@
         </ul>
     </xsl:template>
 
+	<!-- Genere le menu de droite des parcours -->
     <xsl:template match="declaration-parcours" mode="menu">
         <div id="title">PARCOURS</div>
         <ul id="list-ul">
@@ -82,6 +83,7 @@
         <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
+	<!-- Genere la liste des parcours dans la page parcours.html -->
     <xsl:template match="parcours" mode="ref">
         <li>
             <a href="{@id}.html">

@@ -57,10 +57,10 @@ a {
 #menu-list {
 	position: fixed;
 	top: 61px;
-	right: 0vw;
-	width: 20vw;
+	right: 0;
+	width: 20%;
 	overflow: hidden;
-	height: 50vw;
+	height: 100%;
 	border-left: 1px solid #ccc;
 }
 
@@ -69,7 +69,7 @@ a {
     margin: 0;
     padding: 0;
   overflow-y: auto;
-  height: 81vh;
+  height: 81%;
   width: 100%;
   padding-right: 25px;
   padding-left: 5px;
@@ -95,6 +95,7 @@ a {
 #menu-list a, .list a {
   text-decoration: none;
   color: #333;
+  
 }
 
 .list li:hover a {
@@ -102,18 +103,18 @@ a {
 	color: #fff;
 }
 
-.list a {
-	padding: inherit;
-	display: inline-block;
-	width: 99%;
-	padding: 5px;
-}
-
 .list {
 	border: 1px solid #ccc;
 	list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.list a {
+	padding: inherit;
+	display: inline-block;
+	width: 99%;
+	padding: 5px;
 }
 
 .list li {
