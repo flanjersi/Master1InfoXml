@@ -64,6 +64,14 @@
                                     </ul>
                                 </xsl:if>
                             </div>
+                            <div class="box">
+                                <h3>Parcours concerné par l'unité :</h3>
+                                <xsl:call-template name="list-parcours-unite">
+                                    <xsl:with-param name="id-unite">
+                                        <xsl:value-of select="@id"/>
+                                    </xsl:with-param>
+                                </xsl:call-template>
+                            </div>
                         </div>
                         <div id="menu-list" w3-include-html="unitesMenu.html"></div>
                         <script>
@@ -93,6 +101,21 @@
                 <xsl:value-of select="nom"/>
             </a>
         </li>
+    </xsl:template>
+
+    <!-- Genere la liste des parcours possédant l'unité d'id "id-unite" -->
+    <xsl:template name="list-parcours-unite">
+        <xsl:param name="id-unite"/>
+        <ul class="list">
+            <xsl:for-each select="//parcours[semestre [ ens-UE [ref-unite[ @ref = $id-unite]]]]">
+                <xsl:sort select="nom"/>
+                <li>
+                    <a href="{@id}.html">
+                        <xsl:value-of select="nom"/>
+                    </a>
+                </li>
+            </xsl:for-each>
+        </ul>
     </xsl:template>
 
 
