@@ -1,36 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
-    <xsl:template name="intervenants">
-        <xsl:apply-templates select="//intervenant"/>
-    </xsl:template>
-
-    <xsl:template match="intervenant">
-        ---------------------
-        <h2 id="{@id}">
-            <xsl:value-of select="nom"/>
-        </h2>
-        Mail :
-        <xsl:choose>
-            <xsl:when test="mail/text()">
-                <xsl:value-of select="mail"/>
-            </xsl:when>
-            <xsl:otherwise>
-                Non renseigné
-            </xsl:otherwise>
-        </xsl:choose>
-        <br/>
-        Site web :
-        <xsl:choose>
-            <xsl:when test="site-web/text()">
-                <xsl:value-of select="site-web"/>
-            </xsl:when>
-            <xsl:otherwise>
-                Non renseigné
-            </xsl:otherwise>
-        </xsl:choose>
-        <br/>
-    </xsl:template>
-
+	<!-- Genere la liste des enseignants dans la page intervenants.html -->
     <xsl:template match="intervenant" mode="ref">
         <li>
             <a href="{@id}.html">
@@ -41,6 +11,7 @@
         </li>
     </xsl:template>
 
+	<!-- Genere la liste des enseignants qui enseigne une unite x -->
     <xsl:template match="ref-intervenant">
         <li>
             <a href="{@ref}.html">
@@ -76,7 +47,7 @@
                             </h1>
                             <div class="box">
                                 <p>
-                                    <img class="logo" src="img/email.svg" alt="Email : "/>
+                                    <img class="logo" src="img/email.svg"/>
                                     <xsl:choose>
                                         <xsl:when test="mail/text()">
                                             <xsl:value-of select="mail"/>
@@ -86,7 +57,7 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <br/>
-                                    <img class="logo" src="img/site.svg" alt="Site web : "/>
+                                    <img class="logo" src="img/site.svg"/>
                                     <xsl:choose>
                                         <xsl:when test="site-web/text()">
                                             <a href="http://{site-web/text()}">
@@ -126,6 +97,7 @@
         </xsl:for-each>
     </xsl:template>
 
+	<!-- Genere le menu de droite des enseignants -->
     <xsl:template match="declaration-intervenants" mode="menu">
         <div id="title">INTERVENANTS</div>
         <ul id="list-ul">
@@ -142,7 +114,7 @@
         <input type="text" id="searchMenu" onkeyup="searchMenu()" placeholder="Recherche"/>
     </xsl:template>
 
-
+	<!-- Genere la liste des unite qu'un enseignant enseigne -->
     <xsl:template name="enseignements-assure">
         <xsl:param name="id-enseignant"/>
         <ul class="list">
@@ -156,7 +128,7 @@
         </ul>
     </xsl:template>
 
-
+	<!-- Genere la liste des responsables des parcours pour un enseignant -->
     <xsl:template name="responsable-parcours">
         <xsl:param name="id-enseignant"/>
         <ul class="list">
