@@ -4,33 +4,6 @@
         <xsl:apply-templates select="//intervenant"/>
     </xsl:template>
 
-    <xsl:template match="intervenant">
-        ---------------------
-        <h2 id="{@id}">
-            <xsl:value-of select="nom"/>
-        </h2>
-        Mail :
-        <xsl:choose>
-            <xsl:when test="mail/text()">
-                <xsl:value-of select="mail"/>
-            </xsl:when>
-            <xsl:otherwise>
-                Non renseigné
-            </xsl:otherwise>
-        </xsl:choose>
-        <br/>
-        Site web :
-        <xsl:choose>
-            <xsl:when test="site-web/text()">
-                <xsl:value-of select="site-web"/>
-            </xsl:when>
-            <xsl:otherwise>
-                Non renseigné
-            </xsl:otherwise>
-        </xsl:choose>
-        <br/>
-    </xsl:template>
-
     <xsl:template match="intervenant" mode="ref">
         <li>
             <a href="{@id}.html">

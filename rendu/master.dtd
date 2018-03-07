@@ -24,8 +24,10 @@
         <!ELEMENT a ( #PCDATA | %fontstyle;)*>
         <!ATTLIST a href CDATA #IMPLIED>
 
-        <!--, declaration-metier-->
         <!ELEMENT  master    (declaration-intervenants, declaration-unite, declaration-parcours )>
+        <!ATTLIST  master
+                xmlns:xsi CDATA #REQUIRED
+                xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
 
         <!ELEMENT  intervenants (ref-intervenant*)>
         <!ELEMENT  ref-intervenant    (#PCDATA)>
@@ -53,12 +55,9 @@
 
 
         <!ELEMENT  declaration-parcours (parcours)*>
-        <!ELEMENT  parcours  (nom, description, responsables, semestre+)>
+        <!ELEMENT  parcours  (nom, description, responsables, semestre, semestre)>
         <!ATTLIST  parcours id ID #REQUIRED>
         <!ELEMENT  responsables (ref-intervenant*)>
-
-        <!ELEMENT  ref-metier (#PCDATA)>
-        <!ATTLIST  ref-metier ref IDREF  #REQUIRED>
 
         <!ELEMENT  description  %blockText;>
 

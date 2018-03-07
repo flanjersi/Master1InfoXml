@@ -42,7 +42,7 @@
             </xs:element>
         </xs:sequence>
 
-        <xs:attribute type="xs:string" name="id" use="required"/>
+        <xs:attribute type="xs:ID" name="id" use="required"/>
     </xs:complexType>
 
 
@@ -75,7 +75,7 @@
             <xs:element type="intervenantsType" name="intervenants"/>
         </xs:sequence>
 
-        <xs:attribute type="xs:string" name="id" use="required"/>
+        <xs:attribute type="xs:ID" name="id" use="required"/>
 
     </xs:complexType>
 
@@ -130,7 +130,7 @@
             <xs:element type="semestreType" name="semestre" minOccurs="2" maxOccurs="2"/>
         </xs:sequence>
 
-        <xs:attribute type="xs:string" name="id" use="required"/>
+        <xs:attribute type="xs:ID" name="id" use="required"/>
 
     </xs:complexType>
 
@@ -168,8 +168,7 @@
             </xs:element>
             <xs:element name="nom">
                 <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                    </xs:restriction>
+                    <xs:restriction base="xs:string"/>
                 </xs:simpleType>
             </xs:element>
 
@@ -183,7 +182,7 @@
     <xs:complexType name="ref-intervenantType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute type="xs:string" name="ref" use="required"/>
+                <xs:attribute type="xs:IDREFS" name="ref" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -193,7 +192,7 @@
     <xs:complexType name="ref-uniteType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
-                <xs:attribute type="xs:string" name="ref" use="required"/>
+                <xs:attribute type="xs:IDREFS" name="ref" use="required"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
